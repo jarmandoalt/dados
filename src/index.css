@@ -4,6 +4,7 @@ body {
 
 /*Ajustes*/
 
+
 #divConfig > div:first-child {
   background-color: #1B4079;
   width: 80vw;
@@ -141,7 +142,7 @@ body {
 
 #atras {
     position: absolute;
-    bottom: 2vh;
+    bottom: 0;
     left: 0;
     height: 5vh;
     width: 100vw;
@@ -255,4 +256,60 @@ body {
   height: 5vh;
   color: whitesmoke;
   border-radius: 6px 0 0 6px;
+}
+
+
+@media screen and (max-height: 600px) {
+  .modal-content {
+    position: absolute;
+    background-color: rgb(74, 131, 236);
+    top: 8vh;
+    left: 5vw;
+    width: 90vw !important;
+    height: 50vh;
+    border-radius: 20px 3px;
+  }
+
+  .modal-content > div > div {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+  }
+
+  .modal-content > div > div > h2 {
+    font-size: 8vw;
+    margin: auto;
+    color: whitesmoke;
+  }
+  
+  .modal-content > div > div > input {
+    width: 80vw;
+    margin: auto;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 7vh;
+    height: 10vh;
+    text-align: center;
+    border-radius: 6px 2px;
+  }
+
+  .modal-content > div > button:last-child {
+    width: 70vw;
+    margin: auto;
+    height: 12vh;
+    border: none;
+    background-color: rgb(170, 188, 223);
+    color: rgb(24, 60, 107);
+    border-radius: 2px 6px 6px 2px;
+  }
+  
+  .modal-content > div > button:first-child {
+    border: none;
+    background-color: rgb(236, 79, 74);
+    width: 25vw;
+    margin: auto;
+    height: 8vh;
+    color: whitesmoke;
+    border-radius: 6px 0 0 6px;
+  }
 }
